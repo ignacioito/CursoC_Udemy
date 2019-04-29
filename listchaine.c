@@ -2,6 +2,7 @@
 #include<stdio.h>
 
 void print_list(node_t * head);
+void push(node_t * head, int val);
 
 typedef struct node{
 	int val;
@@ -34,3 +35,30 @@ void print_list(node_t * head){
 		current = current->next;
 	}
 }
+
+void push(node_t * head, int val){
+	node_t * current = head;
+	while(current->next != NULL){
+		current = current->next;
+	}
+	/*Now we can add a new variable*/
+	current->next = malloc(sizeof(node_t));
+	current->next->val = val;
+	current->next->next = NULL;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

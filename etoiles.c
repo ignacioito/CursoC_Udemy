@@ -7,7 +7,7 @@ int main()
 {
 	char aux = '*';
 	for (int i = 0; i < 5; ++i)
-	{
+	{ 
 		for (int j = 5; j > 0; --j)
 		{
 			if(aux > i)
@@ -110,6 +110,8 @@ int main()
 	}
 printf(" %%%%%%%%%%%%%%%%%%%%%%%%%%%% ");
 printf("\n");
+
+int aux3;
 
 for (int i = 0; i < 5; ++i)
 	{
